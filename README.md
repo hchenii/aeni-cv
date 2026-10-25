@@ -4,8 +4,8 @@
 
 **Name:** Chenybabes Dalogdug  
 **Year Level:** 4th Year  
-**Set/Section:** [YOUR SET/SECTION]  
-**Subject:** [YOUR SUBJECT]
+**Set/Section:** BSIT 4C
+
 
 ## About This Project
 
