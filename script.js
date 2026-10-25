@@ -129,3 +129,11 @@ window.addEventListener('resize', scheduleNavigationUpdate);
 window.addEventListener('load', scheduleNavigationUpdate);
 filterBar?.addEventListener('click', scheduleNavigationUpdate);
 updateReadingPosition();
+
+// Keep the first screen aligned with the actual navigation height on every device.
+if (header && 'ResizeObserver' in window) {
+    const headerSizeObserver = new ResizeObserver(() => {
+        document.documentElement.style.setProperty('--header-height', `${header.getBoundingClientRect().height}px`);
+    });
+    headerSizeObserver.observe(header);
+}
