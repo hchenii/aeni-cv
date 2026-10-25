@@ -72,9 +72,6 @@ main > section { padding: var(--space) var(--gutter); position: relative; }
 .portrait-frame { overflow: hidden; border-radius: 48% 48% 3px 3px; background: white; }
 .profile-photo img { width: 100%; }
 .profile-photo figcaption { padding: .8rem .3rem .3rem; margin: 0; font-size: .8rem; font-weight: 700; text-align: center; color: var(--wine); }
-.profile-photo figcaption span { display: block; font-size: .66rem; font-weight: 400; letter-spacing: .03em; }
-.cherry-accent { width: 70px; height: 70px; color: var(--wine); pointer-events: none; }
-#home > .cherry-accent { position: absolute; bottom: 2rem; left: calc(50% - 35px); transform: rotate(-12deg); }
 /* Full-width waves join the pink and wine sections without horizontal overflow. */
 #about { display: grid; grid-template-columns: .85fr 1.15fr; gap: 0 clamp(2rem, 6vw, 5rem); background: var(--wine); color: var(--cream); padding-top: calc(var(--space) + 5rem); padding-bottom: calc(var(--space) + 5rem); }
 .section-wave { position: absolute; left: 0; width: 100%; height: 90px; display: block; pointer-events: none; }
@@ -143,7 +140,7 @@ time { font-size: .83rem; font-weight: 700; color: var(--wine); }
 #experience article::before { box-shadow: 0 0 0 5px var(--pink); }
 #achievements ul { list-style: none; margin: 0; padding: 0; }
 #achievements li { padding: 1.5rem; border: 1px solid var(--line); background: var(--pink); border-radius: 10px; margin: 0; }
-/* Closing section: real links, strong contrast, a single cherry ornament. */
+/* Closing section: real links, strong contrast, a clean closing layout. */
 #contact { display: grid; grid-template-columns: 1.1fr 1fr; gap: 0 3rem; padding-top: calc(var(--space) + 1rem); background: var(--wine); color: var(--cream); border-radius: 45% 10% 0 0 / 40px 30px 0 0; }
 #contact .section-heading { grid-column: 1; margin-bottom: 1.4rem; }
 #contact h2, #contact .eyebrow, #contact a { color: var(--cream); }
@@ -156,7 +153,6 @@ time { font-size: .83rem; font-weight: 700; color: var(--wine); }
 #contact :focus-visible { outline-color: var(--cream); }
 #contact .button-light { color: var(--wine); background: var(--warm); border-color: var(--warm); }
 #contact .button-light:hover { background: var(--cream); }
-#contact > .cherry-accent { position: absolute; top: 1.4rem; right: var(--gutter); width: 50px; height: 50px; color: var(--warm); }
 footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.7rem var(--gutter); background: var(--wine); color: var(--warm); border-top: 1px solid #A26573; font-size: .73rem; }
 footer p { margin: 0; }
 footer a { color: var(--cream); }
@@ -201,7 +197,6 @@ footer :focus-visible { outline-color: var(--cream); }
     .hero-actions { gap: .6rem; }
     .button { font-size: .77rem; gap: .6rem; padding: .75rem 1rem; }
     .profile-photo { justify-self: center; max-width: 310px; }
-    #home > .cherry-accent { bottom: .9rem; width: 52px; height: 52px; left: calc(50% - 26px); }
     #about { grid-template-columns: 1fr; gap: 1.5rem; }
     #about .section-heading { grid-column: 1; grid-row: 1; margin-bottom: .5rem; }
     .about-portrait { position: static; grid-column: 1; grid-row: 2; width: 100%; max-width: 290px; justify-self: center; margin: 0 0 1rem; }
@@ -253,7 +248,6 @@ nav a { font-size: .64rem; text-transform: uppercase; font-weight: 700; letter-s
 .profile-photo img { aspect-ratio: .8; object-fit: cover; }
 /* The name and title already appear in the hero; keep the caption for assistive reading. */
 .profile-photo figcaption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); padding: 0; }
-#home > .cherry-accent { width: 135px; height: 135px; left: auto; right: calc(var(--gutter) - .5rem); bottom: 2.3rem; transform: rotate(6deg); z-index: 2; }
 #about { padding-top: 4.5rem; padding-bottom: 8rem; grid-template-columns: .85fr 1.15fr; gap: 0 3.5rem; }
 #about .wave-top { display: none; }
 #about .wave-bottom { height: 100px; color: var(--pink); }
@@ -288,7 +282,6 @@ nav a { font-size: .64rem; text-transform: uppercase; font-weight: 700; letter-s
 #projects :focus-visible, #about :focus-visible { outline-color: var(--cream); }
 #experience { background: var(--pink); }
 #contact { border-radius: 0; padding-top: 4.5rem; }
-#contact > .cherry-accent { width: 65px; height: 65px; top: 1rem; }
 #contact h2 .script-word { font-size: 1.2em; }
 @media (max-width: 800px) {
     .site-header { gap: 1rem; }
@@ -298,7 +291,6 @@ nav a { font-size: .64rem; text-transform: uppercase; font-weight: 700; letter-s
     #home { min-height: 560px; gap: 1.5rem; }
     .reference-name { font-size: clamp(3.6rem, 8.4vw, 5rem); }
     #about { column-gap: 2rem; }
-    #home > .cherry-accent { width: 105px; height: 105px; }
     .project-card { gap: 1.5rem; }
 }
 @media (max-width: 600px) {
@@ -311,7 +303,6 @@ nav a { font-size: .64rem; text-transform: uppercase; font-weight: 700; letter-s
     #home::before { width: 100%; height: 20rem; top: -12rem; right: -25%; }
     #home::after { top: 0; left: -35%; width: 120%; height: 23rem; }
     .profile-photo { max-width: 285px; margin: 0; }
-    #home > .cherry-accent { bottom: 2rem; right: .8rem; width: 110px; height: 110px; }
     #about { grid-template-columns: 1fr; padding-top: 3.5rem; padding-bottom: 7rem; gap: 1.5rem; }
     #about .section-heading { grid-column: 1; grid-row: 1; }
     .about-portrait { grid-column: 1; grid-row: 2; max-width: 255px; }
