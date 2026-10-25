@@ -1,115 +1,245 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chenybabes Dalogdug | Personal CV</title>
+    <meta name="description" content="Education, skills, experience, and academic projects of Chenybabes M. Dalogdug, an Information Technology student.">
+    <title>Chenybabes M. Dalogdug | Personal CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <a class="brand" href="#home"><span aria-hidden="true">CMD<span class="brand-dot">.</span></span><span class="brand-name">Chenybabes M. Dalogdug</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" hidden>Menu <span aria-hidden="true">☰</span></button>
+        <nav id="main-navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main class="cv-container">
-
-        <!-- Header -->
-        <header>
-            <h1>Chenybabes Dalogdug</h1>
-            <p class="subtitle">Information Technology Student</p>
-
-            <div class="contact">
-                <a href="mailto:dalogdugchenybabes@gmail.com">dalogdugchenybabes@gmail.com</a>
-                <span class="contact-divider" aria-hidden="true">|</span>
-                <a href="tel:+639098361213">+63 909 836 1213</a>
+    <main id="main-content">
+        <section id="home" aria-labelledby="home-heading">
+            <div class="hero-copy">
+            <p class="eyebrow">Information Technology Student</p>
+            <h1 id="home-heading"><span>Chenybabes M.</span> <span class="surname">Dalogdug</span></h1>
+            <p class="location">Panabo City, Philippines</p>
+            <p>I am an Information Technology student with experience in remote data entry, administrative support, and private English tutoring.</p>
+            <div class="hero-actions"><a class="button" href="#projects">View Projects <span aria-hidden="true">↗</span></a> <a class="button button-outline" href="#contact">Contact Me</a></div>
             </div>
-        </header>
-
-        <!-- Profile -->
-        <section class="profile" aria-labelledby="profile-heading">
-            <h2 id="profile-heading">Profile</h2>
-            <p>
-                Detail-oriented and highly organized individual with experience
-                maintaining accurate records across spreadsheets, databases,
-                and digital systems. Skilled in data verification, quality
-                assurance, and handling confidential legal and administrative
-                documents. Proficient in Microsoft Office and Google Workspace,
-                with strong written communication skills and a commitment to
-                accuracy, efficiency, and professionalism in administrative
-                and data management tasks.
-            </p>
+            <figure class="profile-photo">
+                <div class="portrait-frame">
+                <img src="assets/images/chenybabes-dalogdug.jpg"
+                     alt="Professional portrait of Chenybabes M. Dalogdug"
+                     width="1024" height="1026" fetchpriority="high">
+                </div>
+                <figcaption>Chenybabes M. Dalogdug <span>Information Technology Student</span></figcaption>
+            </figure>
         </section>
 
-        <!-- Education -->
-        <section class="education" aria-labelledby="education-heading">
-            <h2 id="education-heading">Education</h2>
+        <section id="about" aria-labelledby="about-heading">
+            <header class="section-heading">
+                <p class="eyebrow">01 / About</p>
+                <h2 id="about-heading">About me</h2>
+            </header>
+            <div class="about-statement">
+                <p class="large-statement">I enjoy organizing information, maintaining accurate records, and <em>communicating clearly.</em></p>
+                <p>I am developing my technical skills through academic projects and hands-on learning.</p>
+            </div>
+            <div class="about-support">
+            <dl>
+                <dt>Name</dt><dd>Chenybabes M. Dalogdug</dd>
+                <dt>Program</dt><dd>Bachelor of Science in Information Technology</dd>
+                <dt>Location</dt><dd>Panabo City, Philippines</dd>
+            </dl>
+            <h3>Career objective</h3>
+            <p>To pursue internship and entry-level opportunities where I can apply my information technology knowledge, organizational skills, and communication abilities while gaining practical experience and contributing to meaningful projects.</p>
+            <h3>Career interests</h3>
+            <ul>
+                <li>Web development</li>
+                <li>Database and information management</li>
+                <li>UI/UX design</li>
+                <li>IT and administrative support</li>
+            </ul>
+            </div>
+        </section>
 
-            <div class="item">
+        <section id="education" aria-labelledby="education-heading">
+            <header class="section-heading">
+                <p class="eyebrow">02 / Education</p>
+                <h2 id="education-heading">Education</h2>
+            </header>
+            <article>
                 <h3>Bachelor of Science in Information Technology</h3>
-                <p>University of Southeastern Philippines</p>
-                <p>4th Year Student</p>
-            </div>
+                <p>Davao del Norte State College</p>
+                <p><time datetime="2023">2023</time> &ndash; Present</p>
+                <!-- Year level and expected graduation await confirmation. -->
+                <h4>Relevant academic areas</h4>
+                <ul>
+                    <li>Database management</li>
+                    <li>Systems analysis</li>
+                    <li>Technical documentation</li>
+                </ul>
+            </article>
+            <article>
+                <h3>TVL&ndash;ICT (Animation and Programming)</h3>
+                <p>Northlink Technological College</p>
+                <p>Graduated: <time datetime="2023">2023</time></p>
+                <p>Graduated with Honors</p>
+            </article>
         </section>
 
-        <!-- Technical Skills -->
-        <section class="skills" aria-labelledby="skills-heading">
-            <h2 id="skills-heading">Technical Skills</h2>
-
+        <section id="skills" aria-labelledby="skills-heading">
+            <header class="section-heading">
+                <p class="eyebrow">03 / Skills</p>
+                <h2 id="skills-heading">Skills &amp; strengths</h2>
+            </header>
             <div class="skill-group">
                 <h3>Administrative</h3>
-                <p>
-                    Data entry (60+ WPM), web portal/forms updates,
-                    data verification, quality checks, email/calendar,
-                    and document formatting.
-                </p>
-            </div>
-
-            <div class="skill-group">
-                <h3>Software</h3>
-                <p>
-                    Microsoft 365 (Word/Excel), Google Workspace
-                    (Docs/Sheets/Drive/Forms), Canva, Figma, and CapCut.
-                </p>
-            </div>
-
-            <div class="skill-group">
-                <h3>Technical</h3>
-                <p>
-                    Database basics, digital filing and organization,
-                    and basic IT support.
-                </p>
-            </div>
-
-            <div class="skill-group">
-                <h3>Communication</h3>
-                <p>
-                    Professional written English, proofreading,
-                    clarification follow-ups, and status reporting.
-                </p>
-            </div>
-        </section>
-
-        <!-- Experience -->
-        <section class="experience" aria-labelledby="experience-heading">
-            <h2 id="experience-heading">Professional Experience</h2>
-
-            <div class="item">
-                <h3>Remote Data Entry Clerk (Case Records)</h3>
-                <p class="job-details">Remote, EST | January 2026 – April 2026</p>
-
                 <ul>
-                    <li>
-                        Maintained accurate case records in trackers and
-                        databases; verified information against source
-                        documents and corrected errors.
-                    </li>
-                    <li>
-                        Standardized identifiers and dates while managing
-                        confidential files through secure digital organization.
-                    </li>
+                    <li>Data entry: 60+ WPM</li>
+                    <li>Data verification and quality checks</li>
+                    <li>Web portal and form updates</li>
+                    <li>Email and calendar support</li>
+                    <li>Document formatting</li>
+                    <li>Digital filing and organization</li>
                 </ul>
             </div>
+            <div class="skill-group">
+                <h3>Software</h3>
+                <ul>
+                    <li>Microsoft Word and Excel</li>
+                    <li>Google Docs, Sheets, Drive, and Forms</li>
+                    <li>Canva</li><li>Figma</li><li>CapCut</li><li>Zoom</li><li>Google Meet</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3>Technical</h3>
+                <ul>
+                    <li>Database basics</li>
+                    <li>Basic IT support</li>
+                    <li>Systems analysis and technical documentation coursework</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3>Communication and teaching</h3>
+                <ul>
+                    <li>Written and spoken English</li>
+                    <li>Proofreading</li>
+                    <li>Clarification follow-ups and status reporting</li>
+                    <li>Grammar and pronunciation instruction</li>
+                    <li>Student assessment and progress monitoring</li>
+                    <li>Adaptability and patience</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3>Languages</h3>
+                <ul><li>English</li><li>Tagalog</li></ul>
+            </div>
         </section>
 
-    </main>
+        <section id="projects" aria-labelledby="projects-heading">
+            <header class="section-heading">
+                <p class="eyebrow">04 / Projects</p>
+                <h2 id="projects-heading">Academic project</h2>
+            </header>
+            <article class="project-card">
+                <div class="project-preview" role="img" aria-label="RiceFlow screenshot placeholder; screenshot not yet supplied">
+                    <span class="eyebrow">Academic capstone / In progress</span>
+                    <span class="preview-title" aria-hidden="true">RiceFlow<span class="preview-dot">.</span></span>
+                    <span class="preview-note">Project screenshot to be provided</span>
+                </div>
+                <div class="project-content">
+                <h3>RiceFlow</h3>
+                <p class="project-status">Ongoing Academic Capstone &middot; Collaborative project</p>
+                <p>GIS-Based Land Suitability Analysis and Mobile Application for Rice Farming in Panabo City, Davao del Norte</p>
+                <p>A collaborative academic project aimed at helping rice farmers assess land suitability and select suitable rice varieties using GIS data and a rule-based Rice Suitability Index.</p>
+                <h4>Planned features</h4>
+                <p>The following features are planned; implementation has not yet been confirmed.</p>
+                <ul>
+                    <li>GPS-based farm location capture</li>
+                    <li>Land suitability assessment</li>
+                    <li>Top-three rice variety recommendations</li>
+                    <li>Localized planting guidance</li>
+                    <li>Farm activity logging</li>
+                    <li>Yield tracking</li>
+                </ul>
+                <p>Individual contribution and technology stack: awaiting confirmation.</p>
+                <!-- Add screenshots and repository links only when supplied. -->
+                </div>
+            </article>
+        </section>
 
+        <section id="experience" aria-labelledby="experience-heading">
+            <header class="section-heading">
+                <p class="eyebrow">05 / Experience</p>
+                <h2 id="experience-heading">Experience</h2>
+            </header>
+            <article>
+                <h3>Remote Data Entry Clerk &mdash; Case Records</h3>
+                <p>Remote, EST</p>
+                <p>Ended <time datetime="2026-04">April 2026</time>; starting month awaiting confirmation.</p>
+                <ul>
+                    <li>Maintained accurate case records in trackers and databases.</li>
+                    <li>Verified records against source documents and corrected errors.</li>
+                    <li>Standardized identifiers and dates.</li>
+                    <li>Organized confidential files securely.</li>
+                    <li>Reviewed documents for accuracy and consistency.</li>
+                    <li>Worked independently and met deadlines.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>HR Assistant Intern</h3>
+                <p>Davao International Container Terminal</p>
+                <p><time datetime="2023-04">April 2023</time> &ndash; <time datetime="2023-05">May 2023</time></p>
+                <ul>
+                    <li>Updated employee databases and checked HR documents for accuracy.</li>
+                    <li>Prepared and proofread HR letters and official documents.</li>
+                    <li>Coordinated clarification of missing or unclear information.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="achievements" aria-labelledby="achievements-heading">
+            <header class="section-heading">
+                <p class="eyebrow">06 / Achievements</p>
+                <h2 id="achievements-heading">Achievements</h2>
+            </header>
+            <ul>
+                <li>Graduated with Honors &mdash; Northlink Technological College, 2023.</li>
+            </ul>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <header class="section-heading">
+                <p class="eyebrow">07 / Contact</p>
+                <h2 id="contact-heading">Let's work together.</h2>
+            </header>
+            <p>For internship, employment, and freelance opportunities:</p>
+            <p><a class="button button-light" href="mailto:dalogdugchenybabes@gmail.com">Email Me <span aria-hidden="true">↗</span></a></p>
+            <ul>
+                <li>Email: <a href="mailto:dalogdugchenybabes@gmail.com">dalogdugchenybabes@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/hchenii">hchenii</a></li>
+                <!-- Public phone display approved during content review. -->
+                <li>Phone: <a href="tel:+639098361213">+63 909 836 1213</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Chenybabes M. Dalogdug &middot; Personal CV</p>
+        <a href="#home">Back to top</a>
+    </footer>
 </body>
 </html>
