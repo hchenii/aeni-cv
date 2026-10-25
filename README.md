@@ -2,9 +2,16 @@
 
 Student: **Chenybabes M. Dalogdug**
 
+<<<<<<< HEAD
 A personal CV and portfolio for a school assignment and future internship,
 employment, and freelance opportunities. Built with HTML, CSS, and vanilla
 JavaScript. AI assists development; this site does not include an AI chatbot.
+=======
+**Name:** Chenybabes Dalogdug  
+**Year Level:** 4th Year  
+**Set/Section:** BSIT 4C
+
+>>>>>>> a090d29530722cc030ae2fd07de54ac56db71ad7
 
 ## Current stage
 
@@ -105,3 +112,4 @@ repository and import it into Vercel as a static site. Confirm deployment settin
 and test the real public URL at that stage, then update this README.
 
 Final LMS submission requires both the public Vercel URL and GitHub repository URL.
+**Chenybabes Dalogdug**
