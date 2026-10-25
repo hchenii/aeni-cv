@@ -71,3 +71,61 @@ if ('IntersectionObserver' in window) {
         }
     });
 }
+
+// Skill filters are generated from the real category headings, not a second list.
+const skillSection = document.querySelector('#skills');
+const filterBar = document.querySelector('.skill-filters');
+const skillGroups = [...document.querySelectorAll('#skills .skill-group')];
+if (skillSection && filterBar && skillGroups.length) {
+    const choices = ['All skills', ...skillGroups.map(group => group.querySelector('h3').textContent)];
+    choices.forEach((label, index) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = label;
+        button.setAttribute('aria-pressed', String(index === 0));
+        button.addEventListener('click', () => {
+            skillGroups.forEach((group, groupIndex) => {
+                group.hidden = index !== 0 && groupIndex !== index - 1;
+            });
+            filterBar.querySelectorAll('button').forEach(control => {
+                control.setAttribute('aria-pressed', String(control === button));
+            });
+            skillSection.dataset.filtered = String(index !== 0);
+        });
+        filterBar.append(button);
+    });
+    // Without JavaScript, every skill group remains available in the page.
+    filterBar.hidden = false;
+}
+
+// Highlight the current chapter and show reading progress without altering scrolling.
+const pageSections = [...document.querySelectorAll('main > section[id]')];
+const sectionLinks = [...document.querySelectorAll('#main-navigation a')];
+let navigationFrame = false;
+function updateReadingPosition() {
+    const distance = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = distance > 0 ? Math.min(1, Math.max(0, window.scrollY / distance)) : 0;
+    header?.style.setProperty('--reading-progress', progress);
+    let current = pageSections[0];
+    const marker = (header?.getBoundingClientRect().height || 70) + 80;
+    pageSections.forEach(section => {
+        if (section.getBoundingClientRect().top <= marker) current = section;
+    });
+    if (progress > 0.995) current = pageSections[pageSections.length - 1];
+    sectionLinks.forEach(link => {
+        if (link.hash === '#' + current?.id) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+    });
+    navigationFrame = false;
+}
+function scheduleNavigationUpdate() {
+    if (!navigationFrame) {
+        navigationFrame = true;
+        requestAnimationFrame(updateReadingPosition);
+    }
+}
+window.addEventListener('scroll', scheduleNavigationUpdate, { passive: true });
+window.addEventListener('resize', scheduleNavigationUpdate);
+window.addEventListener('load', scheduleNavigationUpdate);
+filterBar?.addEventListener('click', scheduleNavigationUpdate);
+updateReadingPosition();
